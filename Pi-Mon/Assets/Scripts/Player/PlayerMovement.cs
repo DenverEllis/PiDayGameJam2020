@@ -35,6 +35,22 @@ public class PlayerMovement : MonoBehaviour
                     currentDir = Direction.North;
                 }
 
+                switch(currentDir) {
+                    case Direction.North:
+                        gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
+                        break;
+                    case Direction.East:
+                        gameObject.GetComponent<SpriteRenderer>().sprite = eastSprite;
+                        break;
+                    case Direction.South:
+                        gameObject.GetComponent<SpriteRenderer>().sprite = southSprite;
+                        break;
+                    case Direction.West:
+                        gameObject.GetComponent<SpriteRenderer>().sprite = westSprite;
+                        break;
+
+                }
+
                 StartCoroutine(Move(transform));
             }
         }
