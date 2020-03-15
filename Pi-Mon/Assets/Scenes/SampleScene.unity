@@ -6564,6 +6564,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0436ba66027429544adf89b1545910bf, type: 3}
+--- !u!1 &1164956361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1164956362}
+  m_Layer: 0
+  m_Name: DefencePodium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1164956362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164956361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: -25.91, z: -16.925781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 184
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1164964065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8050,6 +8080,7 @@ MonoBehaviour:
   westSprite: {fileID: 3919701827104124988, guid: 298a4ee7d3990014692ff2a0394b7ef0,
     type: 3}
   walkSpeed: 3
+  isAllowedToMove: 1
 --- !u!50 &1413556727
 Rigidbody2D:
   serializedVersion: 4
@@ -9353,6 +9384,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9077205ec5c1264fa5b7c01f2c32137, type: 3}
+--- !u!1 &1594726335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594726336}
+  m_Layer: 0
+  m_Name: AttackPodium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594726336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594726335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.98, y: -30.63, z: -16.925781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 185
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1595530745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10212,6 +10273,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 519420028}
   battleCamera: {fileID: 1413744576}
+  player: {fileID: 1413556723}
+  allPiMon:
+  - {fileID: 427171126762289110, guid: 3b8d92a2500373b439d3915076134526, type: 3}
+  - {fileID: 427171126762289110, guid: 1139486e154ad1f49ab4aedd8667df03, type: 3}
+  allMoves: []
+  defencePodium: {fileID: 1164956362}
+  attackPodium: {fileID: 1594726336}
+  emptyPiMon: {fileID: 427171126762289109, guid: 1139486e154ad1f49ab4aedd8667df03,
+    type: 3}
 --- !u!4 &1834231584
 Transform:
   m_ObjectHideFlags: 0
