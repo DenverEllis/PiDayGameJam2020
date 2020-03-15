@@ -18,5 +18,8 @@ public class Regions : MonoBehaviour
 }
 
 public enum BiomeList {
-    PalletTown
+    Grass,
+    Sand,
+    Water,
+    Ice
 }

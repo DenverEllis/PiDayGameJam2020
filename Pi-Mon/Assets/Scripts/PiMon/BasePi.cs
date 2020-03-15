@@ -9,6 +9,7 @@ public class BasePi : MonoBehaviour
     public Sprite image;
     public BiomeList biomeFound;
     public PiMonType type;
+    public Rarity rarity;
     
     private float maxHP;
     public float baseHP;
